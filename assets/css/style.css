@@ -1,0 +1,92 @@
+body {
+  background-image: url(../images/BlueGeometry.jpg);
+  background-repeat: repeat;
+  font-family: Times, serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+  display: table-cell;
+  width: auto;
+  background: orange;
+  color: white;
+  height: 3em;
+  vertical-align: middle;
+  padding: 0 10px 0 10px;
+}
+
+#instruction {
+  width: 960px;
+  background: beige;
+  color: green;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 5px 10px 5px 10px;
+  margin-top: 20px;
+}
+
+#game {
+  float: left;
+  box-sizing: border-box;
+  width: 400px;
+  height: 120px;
+  background: lightgreen;
+  padding: 25px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#gameTotal {
+  font-size: 4em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#results {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  background: cyan;
+  height: 120px;
+  width: 200px;
+}
+
+#gems {
+  clear: both;
+}
+
+.crystal-image {
+  box-sizing: border-box;
+  float: left;
+  width: 130px;
+  height: 160px;
+  cursor: pointer;
+}
+
+.gutter {
+  float: left;
+  width: 10px;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+#invisibleBreak {
+  clear: both;
+  padding-top: 5px;
+}
+
+#scoreboxtitle,
+#scorebox {
+  background-color: green;
+  color: white;
+  width: 400px;
+}
+
+#scorebox {
+  height: 500 px;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+}
