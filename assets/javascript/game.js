@@ -12,6 +12,7 @@ $(document).ready(function() {
   }
 
   randTargetNumber();
+  console.log("Target: " + targetNumber);
 
   var counter = 0;
   var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -41,8 +42,6 @@ $(document).ready(function() {
 
       // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
       $(crystalbox[i]).html(imageCrystal);
-
-      console.log(crystalbox[i]);
     }
     $(".crystal-image").on("click", function() {
       // Determining the crystal's value requires us to extract the value from the data attribute.
@@ -55,7 +54,7 @@ $(document).ready(function() {
       // We then add the crystalValue to the user's "counter" which is a global variable.
       // Every click, from every crystal adds to the global counter.
       counter += crystalValue;
-
+      console.log(crystalValue);
       // All of the same game win-lose logic applies. So the rest remains unchanged.
       $("#score").text(counter);
 
@@ -78,6 +77,7 @@ $(document).ready(function() {
 
   function again() {
     randTargetNumber();
+    console.log("Target:" + targetNumber);
     counter = 0;
     $("#score").text("0");
     numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];

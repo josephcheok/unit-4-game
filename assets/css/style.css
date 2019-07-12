@@ -62,6 +62,14 @@ h1 {
   cursor: pointer;
 }
 
+.crystal-image:hover {
+  border: solid 3px aliceblue;
+}
+
+.crystal-image:active {
+  border: solid 10px aliceblue;
+}
+
 .gutter {
   float: left;
   width: 10px;
