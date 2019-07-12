@@ -49,7 +49,7 @@ $(document).ready(function() {
       // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
       // Using the .attr("data-crystalvalue") allows us to grab the value out of the "data-crystalvalue" attribute.
       // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
-
+      $("#message").empty();
       var crystalValue = $(this).attr("data-crystalvalue");
       crystalValue = parseInt(crystalValue);
       // We then add the crystalValue to the user's "counter" which is a global variable.
@@ -60,12 +60,12 @@ $(document).ready(function() {
       $("#score").text(counter);
 
       if (counter === targetNumber) {
-        alert("You win!");
+        $("#message").html("You won!");
         win++;
         $("#win").text(win);
         again();
       } else if (counter >= targetNumber) {
-        alert("You lose!!");
+        $("#message").html("You lost!");
         lose++;
         $("#lose").text(lose);
         again();
