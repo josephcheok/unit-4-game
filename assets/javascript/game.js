@@ -26,7 +26,7 @@ $(document).ready(function() {
     "Diamond.jpg",
     "Topaz.jpg"
   ];
-  var crystalbox = ["#citrine", "#emerald", "#ruby", "#sapphire"];
+  var crystalbox = ["#slot1", "#slot2", "#slot3", "#slot4"];
 
   function game() {
     // Next we create a for loop to create crystals for every numberOption.
