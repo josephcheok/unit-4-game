@@ -16,7 +16,16 @@ $(document).ready(function() {
 
   var counter = 0;
   var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  var crystals = ["Citrine.jpg", "Emerald.jpg", "Ruby.png", "Sapphire.jpg"];
+  var crystals = [
+    "Citrine.jpg",
+    "Emerald.jpg",
+    "Ruby.png",
+    "Sapphire.jpg",
+    "Amethyst.gif",
+    "Opal.jpg",
+    "Diamond.jpg",
+    "Topaz.jpg"
+  ];
   var crystalbox = ["#citrine", "#emerald", "#ruby", "#sapphire"];
 
   function game() {
@@ -70,10 +79,10 @@ $(document).ready(function() {
         again();
       }
     });
+    // This time, our click event applies to every single crystal on the page. Not just one.
   }
 
   game();
-  // This time, our click event applies to every single crystal on the page. Not just one.
 
   function again() {
     randTargetNumber();
@@ -81,7 +90,16 @@ $(document).ready(function() {
     counter = 0;
     $("#score").text("0");
     numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    crystals = ["Citrine.jpg", "Emerald.jpg", "Ruby.png", "Sapphire.jpg"]; //restores spliced arrays
+    crystals = [
+      "Citrine.jpg",
+      "Emerald.jpg",
+      "Ruby.png",
+      "Sapphire.jpg",
+      "Amethyst.gif",
+      "Opal.jpg",
+      "Diamond.jpg",
+      "Topaz.jpg"
+    ]; //restores spliced arrays
     game();
   }
 });
