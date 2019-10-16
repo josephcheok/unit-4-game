@@ -1,4 +1,4 @@
-# Crystal game
+# Crystal Collector
 
 How to play the game:
 
@@ -13,7 +13,7 @@ How to play the game:
 
 - You win if your total score matches the random number from the beginning of the game.
 
-- You loses if your score goes above the random number.
+- You lose if your score goes above the random number.
 
 - The game restarts whenever you win or lose.
 
